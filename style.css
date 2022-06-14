@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'Borgia Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Borgia Pro'), url('assets/fonts/BorgiaPro-Regular.woff') format('woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Borgia Pro';
+}
+
+body {
+    background: #192C1E;
+    animation: background-change 0s ease 4s forwards;
+    overflow: hidden;
+}
+
+@keyframes background-change {
+    from {
+        background: #192C1E;
+    }
+
+    to {
+        background: whitesmoke;
+    }
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: .5em;
+    position: fixed;
+    background: #192C1E;
+}
+
+.header-floor {
+    text-decoration: none;
+    color: #D2AF51;
+    font-size: 30px;
+    padding: 0 .2em;
+}
+
+.header-active-floor {
+    border: 1px solid #D2AF51;
+}
+
+.header-arrow-container {
+    position: relative;
+}
+
+.header-arrow {
+    display: block;
+    border: 8px solid transparent;
+    margin: 6px 0;
+}
+
+.header-up-arrow {
+    border-top: 16px solid #D2AF51;
+}
+
+.header-down-arrow {
+    border-bottom: 16px solid #D2AF51;
+}
+
+/* Main */
+
+.main {
+    padding: 0 2em;
+    padding-top: 82px;
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background-logo {
+    position: absolute;
+    height: 250px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: element-disappearance 0s ease 4s forwards;
+}
+
+.main-title {
+    opacity: 0;
+    font-weight: 500;
+    margin-top: 1em;
+    font-size: 50px;
+    animation: element-appearance .5s ease 4s forwards;
+}
+
+.main-catch-phrase {
+    opacity: 0;
+    margin: 1em 0;
+    font-size: 20px;
+    text-align: center;
+    animation: element-appearance .5s ease 4s forwards;
+}
+
+.main-question {
+    opacity: 0;
+    margin: 1em 0;
+    font-size: 18px;
+    animation: element-appearance .5s ease 4s forwards;
+    text-align: center;
+}
+
+.main-bell {
+    height: 75px;
+    opacity: 0;
+    margin: 2em 0;
+    animation: element-appearance .5s ease 4s forwards;
+}
+
+.main-contact-question {
+    opacity: 0;
+    margin: 1em 0;
+    font-size: 18px;
+    animation: element-appearance .5s ease 4s forwards;
+    text-align: center;
+}
+
+.main-contact-container {
+    display: flex;
+    gap: 1em;
+}
+
+.main-contact-link {
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    animation: element-appearance .5s ease 4s forwards;
+    margin: 1em 0;
+}
+
+.main-icon {
+    height: 40px;
+    stroke: black;
+}
+
+@keyframes element-appearance {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes element-disappearance {
+    from {
+        opacity: 1;
+    }
+    
+    to {
+        opacity: 0;
+    }
+}
+
+/* Ascenceur */
+
+.elevator {
+    position: absolute;
+    bottom: calc((100vh - 82px) * -1);
+    height: calc(100vh - 82px);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    animation: elevator-appearance 9s ease 1s forwards;    
+}
+
+.elevator-door {
+    height: 100%;
+    flex: 1;
+    /* background: #353637; */
+    background: linear-gradient(#591C1E,rgb(28, 28, 28));
+    border-top: 1px solid black;
+}
+
+.elevator-left-door {
+    border-right: 1px solid black;
+    animation: left-door-opening 3s ease 4s forwards;
+}
+
+.elevator-right-door {
+    border-left: 1px solid black;
+    animation: right-door-opening 3s ease 4s forwards;
+}   
+
+@keyframes elevator-appearance {
+    from {
+        transform: translateY(0);
+        z-index: 0;
+    }
+
+    33% {
+        transform: translateY(calc((100vh - 82px) * -1));
+        z-index: 0;
+    }
+
+    99% {
+        transform: translateY(calc((100vh - 82px) * -1));
+        z-index: 0;
+    }
+
+    100% {
+        transform: translateY(calc((100vh - 82px) * -1));
+        z-index: -5; 
+    }
+}
+
+@keyframes left-door-opening {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50vw);
+    }
+}
+
+@keyframes right-door-opening {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(50vw);
+    }
+}
