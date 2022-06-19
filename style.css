@@ -112,6 +112,7 @@ body {
     font-size: 18px;
     animation: element-appearance .5s ease 4s forwards;
     text-align: center;
+    color: grey;
 }
 
 .main-bell {
