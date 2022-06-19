@@ -101,9 +101,10 @@ body {
 .main-catch-phrase {
     opacity: 0;
     margin: 1em 0;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     animation: element-appearance .5s ease 4s forwards;
+    color: #591C1E;
 }
 
 .main-question {
@@ -112,22 +113,21 @@ body {
     font-size: 18px;
     animation: element-appearance .5s ease 4s forwards;
     text-align: center;
-    color: grey;
-}
+    }
 
 .main-bell {
     height: 75px;
     opacity: 0;
-    margin: 2em 0;
     animation: element-appearance .5s ease 4s forwards;
 }
 
 .main-contact-question {
     opacity: 0;
     margin: 1em 0;
-    font-size: 18px;
+    font-size: 25px;
     animation: element-appearance .5s ease 4s forwards;
     text-align: center;
+    color: #591C1E;
 }
 
 .main-contact-container {
