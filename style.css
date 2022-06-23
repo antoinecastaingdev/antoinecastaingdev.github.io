@@ -79,7 +79,33 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
+
+/* .background-icon {
+    position: absolute;
+    height: 75px;
+}
+
+.background-icon-1,
+.background-icon-2 {
+    top: calc(82px + 1em);
+}
+
+.background-icon-3,
+.background-icon-4 {
+    bottom: 1em;
+}
+
+.background-icon-1,
+.background-icon-3 {
+    left: 1em;
+}
+
+.background-icon-2,
+.background-icon-4 {
+    right: 1em;
+} */
 
 .background-logo {
     position: absolute;
@@ -93,14 +119,14 @@ body {
 .main-title {
     opacity: 0;
     font-weight: 500;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     font-size: 50px;
     animation: element-appearance .5s ease 4s forwards;
 }
 
 .main-catch-phrase {
     opacity: 0;
-    margin: 1em 0;
+    /* margin: 1em 0; */
     font-size: 25px;
     text-align: center;
     animation: element-appearance .5s ease 4s forwards;
@@ -109,7 +135,7 @@ body {
 
 .main-question {
     opacity: 0;
-    margin: 1em 0;
+    /* margin: 1em 0; */
     font-size: 18px;
     animation: element-appearance .5s ease 4s forwards;
     text-align: center;
@@ -123,7 +149,7 @@ body {
 
 .main-contact-question {
     opacity: 0;
-    margin: 1em 0;
+    /* margin: 1em 0; */
     font-size: 25px;
     animation: element-appearance .5s ease 4s forwards;
     text-align: center;
@@ -140,7 +166,7 @@ body {
     color: black;
     opacity: 0;
     animation: element-appearance .5s ease 4s forwards;
-    margin: 1em 0;
+    /* margin: 1em 0; */
 }
 
 .main-icon {
