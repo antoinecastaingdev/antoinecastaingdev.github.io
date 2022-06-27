@@ -48,7 +48,18 @@ body {
 }
 
 .header-active-floor {
+    position: relative;
+}
+
+.header-active-floor::after {
+    content: "";
     border: 1px solid #D2AF51;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
 }
 
 .header-arrow-container {
@@ -75,16 +86,17 @@ body {
     padding: 0 2em;
     padding-top: 82px;
     width: 100%;
-    height: calc(100vh - 82px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
 
-/* .background-icon {
+.background-icon {
     position: absolute;
     height: 75px;
+    animation: element-disappearance 0s ease 4s forwards;
 }
 
 .background-icon-1,
@@ -105,7 +117,7 @@ body {
 .background-icon-2,
 .background-icon-4 {
     right: 1em;
-} */
+}
 
 .background-logo {
     position: absolute;
