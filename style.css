@@ -95,28 +95,28 @@ body {
 
 .background-icon {
     position: absolute;
-    height: 75px;
+    width: 20%;
     animation: element-disappearance 0s ease 4s forwards;
 }
 
 .background-icon-1,
 .background-icon-2 {
-    top: calc(82px + 1em);
+    top: calc(82px + 2em);
 }
 
 .background-icon-3,
 .background-icon-4 {
-    bottom: 1em;
+    bottom: 2em;
 }
 
 .background-icon-1,
 .background-icon-3 {
-    left: 1em;
+    left: 2em;
 }
 
 .background-icon-2,
 .background-icon-4 {
-    right: 1em;
+    right: 2em;
 }
 
 .background-logo {
@@ -178,12 +178,40 @@ body {
     color: black;
     opacity: 0;
     animation: element-appearance .5s ease 4s forwards;
-    /* margin: 1em 0; */
 }
 
 .main-icon {
     height: 40px;
     stroke: black;
+}
+
+.main-wip {
+    opacity: 0;
+    color: rgba(0, 0, 0, 0.5);
+    animation: element-appearance .5s ease 4s forwards;
+}
+
+.contact-modal {
+    position: absolute;
+    bottom: 5%;
+    width: 90%;
+    background: #591C1E;
+    border: 1px solid #D2AF51;
+    border-radius: 9px;
+    color: #D2AF51;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.modal-quit {
+    position: absolute;
+    height: 20px;
+    right: 5px;
+    top: 5px;
+    transform: rotate(45deg);
 }
 
 @keyframes element-appearance {

@@ -1,7 +1,0 @@
-un header flottant
-
-un background avec potentiellement des icons dedans
-
-un main qui vient par dessus
-
-un ascenceur
