@@ -106,7 +106,7 @@ body {
 
 .background-icon-3,
 .background-icon-4 {
-    bottom: 2em;
+    bottom: calc(82px + 2em);
 }
 
 .background-icon-1,
